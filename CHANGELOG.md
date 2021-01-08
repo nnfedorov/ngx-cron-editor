@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.5](https://github.com/haavardj/ngx-cron-editor/compare/v0.6.4...v0.6.5) (2021-01-08)
+
+
+### Features
+
+* support Angular Material version 11 (PR [#4](https://github.com/haavardj/ngx-cron-editor/issues/4)) ([65aaf83](https://github.com/haavardj/ngx-cron-editor/commit/65aaf835af7ac42d104478abab8732ec556df7ae))
+
 ### [0.6.4](https://github.com/haavardj/ngx-cron-editor/compare/v0.6.3...v0.6.4) (2020-02-27)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "ngx-cron-editor",
-  "description": "A cron expression generator for Angular 11",
+  "description": "A cron expression generator for Angular 6+",
   "author": "Håvard D. Johansen",
   "contributors": [
     "Claudiu Constantin",

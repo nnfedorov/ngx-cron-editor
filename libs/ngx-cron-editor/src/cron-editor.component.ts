@@ -24,7 +24,7 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
   @Input() public disabled: boolean;
   @Input() public options: CronOptions;
   // the name is an Angular convention, @Input variable name + "Change" suffix
-  @Output() cronChange = new EventEmitter();
+  @Output() cronChange = new EventEmitter<string>();
 
   public activeTab: string;
   public selectOptions = this.getSelectOptions();
@@ -49,7 +49,8 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
   }
   set cron(value: string) {
     this.localCron = value;
-    this.onChange(value);
+    this.onChange(this.localCron);
+    this.cronChange.emit(this.localCron);
   }
 
   get isCronFlavorQuartz() {

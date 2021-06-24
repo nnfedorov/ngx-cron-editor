@@ -30,7 +30,7 @@
       <div class="cron-editor-tab-content" [formGroup]="dailyForm">
 
         <mat-radio-group class="cron-editor-radio-group" formControlName="subTab">
-          <mat-radio-button name="subTab" class="cron-editor-radio-button" value="everyDays" checked="checked">
+          <mat-radio-button name="subTab" class="cron-editor-radio-button" value="everyDays" [ngClass]="state.formRadioClass" checked="checked">
 
             <span class="cron-form-label">Every </span>
 
@@ -53,7 +53,7 @@
 
           </mat-radio-button>
 
-          <mat-radio-button name="subTab" class="cron-editor-radio-button" value="everyWeekDay">
+          <mat-radio-button name="subTab" class="cron-editor-radio-button" value="everyWeekDay" [ngClass]="state.formRadioClass">
 
             <span>Week Day (MON-FRI) at </span>
 
@@ -96,9 +96,9 @@
     <!-- Monthly-->
     <mat-tab class="cron-editor-tab" label="Monthly" *ngIf="!options.hideMonthlyTab">
       <div class="cron-editor-tab-content" [formGroup]="monthlyForm">
-        <mat-radio-group formControlName="subTab">
+        <mat-radio-group class="cron-editor-radio-group" formControlName="subTab">
 
-          <mat-radio-button  name="monthly-radio" value="specificDay" >
+          <mat-radio-button name="monthly-radio" class="cron-editor-radio-button" value="specificDay" [ngClass]="state.formRadioClass">
             <!-- Spesific day -->
             <span formGroupName="specificDay">
 
@@ -148,7 +148,7 @@
             </span>
           </mat-radio-button>
 
-          <mat-radio-button  name="monthly-radio" value="specificWeekDay">
+          <mat-radio-button name="monthly-radio" class="cron-editor-radio-button" value="specificWeekDay" [ngClass]="state.formRadioClass">
             <!-- Spesific Week day -->
             <span formGroupName="specificWeekDay">
 
@@ -199,8 +199,8 @@
     <!-- Yearly-->
     <mat-tab class="cron-editor-tab"  label="Yearly" *ngIf="!options.hideYearlyTab">
       <div class="cron-editor-tab-content" [formGroup]="yearlyForm">
-        <mat-radio-group formControlName="subTab">
-          <mat-radio-button name="yearly-radio" value="specificMonthDay">
+        <mat-radio-group class="cron-editor-radio-group" formControlName="subTab">
+          <mat-radio-button name="yearly-radio" class="cron-editor-radio-button" value="specificMonthDay" [ngClass]="state.formRadioClass">
 
             On the
 
@@ -242,7 +242,7 @@
             </cron-time-picker>
           </mat-radio-button>
 
-          <mat-radio-button name="yearly-radio" value="specificMonthWeek" [ngClass]="state.formRadioClass">
+          <mat-radio-button name="yearly-radio" class="cron-editor-radio-button" value="specificMonthWeek" [ngClass]="state.formRadioClass">
 
             On the
 

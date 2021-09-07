@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/haavardj/ngx-cron-editor/compare/v0.6.8...v0.7.0) (2021-09-07)
+
+
+### Features
+
+* support Angular 12 ([cc26170](https://github.com/haavardj/ngx-cron-editor/commit/cc261705bd15b2a540340f996e43fe447d45a2ab))
+
+
+### Bug Fixes
+
+* add missed styles ([bde3bcb](https://github.com/haavardj/ngx-cron-editor/commit/bde3bcbc21a744a56db73a563be4ac9bd0bccdea))
+* cronChange emitter ([513fd8b](https://github.com/haavardj/ngx-cron-editor/commit/513fd8baa132212f5c318aa1d7e273660501df1b))
+
 ### [0.6.8](https://github.com/haavardj/ngx-cron-editor/compare/v0.6.7...v0.6.8) (2021-01-09)
 
 ### [0.6.7](https://github.com/haavardj/ngx-cron-editor/compare/v0.6.6...v0.6.7) (2021-01-09)

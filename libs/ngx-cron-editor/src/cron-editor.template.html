@@ -108,9 +108,9 @@
                 <mat-form-field>
                   <mat-label>Day</mat-label>
                   <mat-select class="month-days" formControlName="day">
-                    <option *ngFor="let monthDaysWithLast of selectOptions.monthDaysWithLasts" [value]="monthDaysWithLast">
+                    <mat-option *ngFor="let monthDaysWithLast of selectOptions.monthDaysWithLasts" [value]="monthDaysWithLast">
                       {{monthDayDisplay(monthDaysWithLast)}}
-                    </option>
+                    </mat-option>
                   </mat-select>
                 </mat-form-field>
               </ng-container>

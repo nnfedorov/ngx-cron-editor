@@ -449,7 +449,7 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
 
   private getDefaultState() {
     const [defaultHours, defaultMinutes, defaultSeconds] = this.options.defaultTime.split(':').map(Number);
-
+    this.localCron = this.isCronFlavorQuartz ? '* 0 0 ? * * *' : '0 0 1/1 * *';
     return {
       minutes: {
         minutes: 1,

@@ -1,7 +1,8 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
-import { CronOptions } from 'ngx-cron-editor';
-import { CronGenComponent } from 'ngx-cron-editor';
-import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
+import {Component, OnInit} from '@angular/core';
+import {FormControl} from '@angular/forms';
+
+import {CronOptions} from 'ngx-cron-editor';
+
 
 @Component({
   selector: 'app-root',
@@ -9,8 +10,11 @@ import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+
   public cronExpression = '0 0 1/1 * *';
+
   public isCronDisabled = false;
+
   public cronOptions: CronOptions = {
     formInputClass: 'form-control cron-editor-input',
     formSelectClass: 'form-control cron-editor-select',
@@ -35,9 +39,6 @@ export class AppComponent implements OnInit {
     cronFlavor: 'standard'
   };
 
-  @ViewChild('cronEditorDemo')
-  cronEditorDemo: CronGenComponent;
-
   cronForm: FormControl;
 
   constructor() {}
@@ -46,7 +47,4 @@ export class AppComponent implements OnInit {
     this.cronForm = new FormControl(this.cronExpression);
   }
 
-  cronFlavorChange() {
-    this.cronEditorDemo.options = this.cronOptions;
-  }
 }

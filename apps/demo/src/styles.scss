@@ -2,16 +2,58 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-@include mat.core();
+//@include mat.core();
 
-$primary: mat.define-palette(mat.$deep-purple-palette);
-$accent:  mat.define-palette(mat.$green-palette, A200, A100, A400);
-$warn:    mat.define-palette(mat.$red-palette);
+//$primary: mat.define-palette(mat.$deep-purple-palette);
+//$accent:  mat.define-palette(mat.$green-palette, A200, A100, A400);
+//$warn:    mat.define-palette(mat.$red-palette);
 
-$theme: mat.define-light-theme($primary, $accent, $warn);
+//$theme: mat.define-light-theme($primary, $accent, $warn);
+//$theme: mat.define-light-theme(red, green, blue);
 
-@include mat.all-component-themes($theme);
+//@include mat.all-component-themes($theme);
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+//html, body { height: 100%; }
+//body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.cron-form-label {
+    margin-right: 1rem;
+}
+
+
+.cron-form-field-joiner {
+    margin: 0 1rem;
+}
+
+
+.cron-form-time-part-joiner {
+    margin: 0 .25rem;
+    animation: clock-tick 1s infinite;
+}
+
+.cron-form-week-days {
+    display: inline-block;
+    padding-bottom: 1.5rem;
+}
+
+
+@keyframes clock-tick {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.mat-radio-container {
+    margin: -.7rem .5rem 0;
+}
+
+.mat-form-field + .mat-form-field {
+    margin-left: 1rem;
+}

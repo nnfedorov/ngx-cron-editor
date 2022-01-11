@@ -1,6 +1,6 @@
 import { Component, Input, Output, OnInit, EventEmitter, forwardRef } from '@angular/core';
 import { CronOptions } from './CronOptions';
-import { Days, MonthWeeks, Months } from './enums';
+import {Days, MonthWeeks, MonthNames} from './enums';
 import { ControlValueAccessor, FormBuilder, FormControl, FormGroup, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { ThemePalette } from '@angular/material/core';
 
@@ -288,7 +288,7 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
   }
 
   public monthDisplay(month: number): string {
-    return Months[month];
+    return MonthNames[month];
   }
 
   public monthDayDisplay(month: string): string {

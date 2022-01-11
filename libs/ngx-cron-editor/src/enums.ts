@@ -31,3 +31,18 @@ export enum Months {
   November,
   December
 }
+
+export const MonthNames: Record<Months, string> = {
+  [Months.January]: $localize`:@@januaryLabel:Январь`,
+  [Months.February]: $localize`:@@februaryLabel:Февраль`,
+  [Months.March]: $localize`:@@marchLabel:Март`,
+  [Months.April]: $localize`:@@aprilLabel:Апрель`,
+  [Months.May]: $localize`:@@mayLabel:Май`,
+  [Months.June]: $localize`:@@juneLabel:Июнь`,
+  [Months.July]: $localize`:@@julyLabel:Июль`,
+  [Months.August]: $localize`:@@augustLabel:Август`,
+  [Months.September]: $localize`:@@septemberLabel:Сентябрь`,
+  [Months.October]: $localize`:@@octoberLabel:Октябрь`,
+  [Months.November]: $localize`:@@novemberLabel:Ноябрь`,
+  [Months.December]: $localize`:@@decemberLabel:Декабрь`
+};

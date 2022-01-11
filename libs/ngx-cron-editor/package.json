@@ -1,11 +1,11 @@
 {
   "$schema": "./node_modules/ng-packagr/package.schema.json",
-  "description": "A cron expression generator for Angular 6+",
-  "name": "ngx-cron-editor",
-  "version": "0.7.2",
+  "description": "A cron expression generator for Angular 12+",
+  "name": "ngx-cron-editor-i18n",
+  "version": "0.7.4",
   "repository": {
     "type": "git",
-    "url": "git://github.com/haavardj/ngx-cron-editor"
+    "url": "git://github.com/nnfedorov/ngx-cron-editor"
   },
   "author": {
     "name": "Håvard Dagenborg Johansen",
@@ -26,9 +26,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/haavardj/ngx-cron-editor/issues"
+    "url": "https://github.com/nnfedorov/ngx-cron-editor/issues"
   },
-  "homepage": "https://github.com/haavardj/ngx-cron-editor",
+  "homepage": "https://github.com/nnfedorov/ngx-cron-editor",
   "peerDependencies": {
     "@angular/core": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0",
     "@angular/animations": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0",
@@ -49,6 +49,6 @@
         "./src"
       ]
     },
-    "dest": "../../dist/libs/ngx-cron-editor"
+    "dest": "../../dist/libs/ngx-cron-editor-i18n"
   }
 }

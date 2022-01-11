@@ -1,23 +1,24 @@
 {
-  "name": "ngx-cron-editor",
-  "description": "A cron expression generator for Angular 6+",
-  "author": "Håvard D. Johansen",
+  "name": "ngx-cron-editor-i18n",
+  "description": "A cron expression generator for Angular 12+",
+  "author": "nfedorov",
   "contributors": [
+    "Håvard D. Johansen",
     "Claudiu Constantin",
     "Eduardo Sarmiento",
     "Aleksey Yermolenko",
     "Ruslan Lekhman <lekhman112@gmail.com> (https://github.com/lekhmanrus)"
   ],
-  "version": "0.7.2",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/haavardj/ngx-cron-editor"
+    "url": "git://github.com/nnfedorov/ngx-cron-editor"
   },
   "bugs": {
-    "url": "https://github.com/haavardj/ngx-cron-editor/issues"
+    "url": "https://github.com/nnfedorov/ngx-cron-editor/issues"
   },
-  "homepage": "https://github.com/haavardj/ngx-cron-editor",
+  "homepage": "https://github.com/nnfedorov/ngx-cron-editor",
   "keywords": [
     "angular",
     "cron",
@@ -32,9 +33,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "copyhtml": "copy 'src/app/cron-editor/*.html' './components/cron-editor/'",
-    "copycss": "copy 'src/app/cron-editor/*.css' './components/cron-editor/'",
-    "pack": "ng-packagr -p package.json & cd dist & npm pack"
+    "pack": "ng-packagr -p package.json & cd dist & npm pack",
+    "pack2": "ng build --prod & cd dist & npm pack"
   },
   "dependencies": {
     "@angular/animations": "~12.0.5",
@@ -57,6 +57,7 @@
     "@angular/cli": "~12.0.5",
     "@angular/compiler-cli": "^12.0.5",
     "@angular/language-service": "^12.0.5",
+    "@angular/localize": "^12.0.5",
     "@types/jasmine": "~3.7.7",
     "@types/jasminewd2": "^2.0.9",
     "@types/node": "^15.12.4",

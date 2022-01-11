@@ -1,7 +1,9 @@
-/*
- * Public API Surface of pmsys
- */
+import '@angular/localize/init';
 
+
+/*
+ * Public API Surface
+ */
 export * from './src/cron-editor.module';
 export * from './src/CronOptions';
 export * from './src/enums';

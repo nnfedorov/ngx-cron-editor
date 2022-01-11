@@ -293,11 +293,11 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
 
   public monthDayDisplay(month: string): string {
     if (month === 'L') {
-      return 'Last Day';
+      return $localize`:@@lastDayLabel:Последний день`;
     } else if (month === 'LW') {
-      return 'Last Weekday';
+      return $localize`:@@lastWeekday:Последний будний день`;
     } else if (month === '1W') {
-      return 'First Weekday';
+      return $localize`:@@firstWeekday:Первый будний день`;
     } else {
       return `${month}${this.getOrdinalSuffix(month)}`;
     }
@@ -539,20 +539,20 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
     if (value.length > 1) {
       const secondToLastDigit = value.charAt(value.length - 2);
       if (secondToLastDigit === '1') {
-        return 'th';
+        return $localize`:@@thSuffix:-й`;
       }
     }
 
     const lastDigit = value.charAt(value.length - 1);
     switch (lastDigit) {
       case '1':
-        return 'st';
+        return $localize`:@@stSuffix:-й`;
       case '2':
-        return 'nd';
+        return $localize`:@@ndSuffix:-й`;
       case '3':
-        return 'rd';
+        return $localize`:@@rdSuffix:-й`;
       default:
-        return 'th';
+        return $localize`:@@thSuffix:-й`;
     }
   }
 

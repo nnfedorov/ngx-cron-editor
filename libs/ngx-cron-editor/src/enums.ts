@@ -1,20 +1,20 @@
 ﻿export const Days = {
-  'SUN': 'Sunday',
-  'MON': 'Monday',
-  'TUE': 'Tuesday',
-  'WED': 'Wednesday',
-  'THU': 'Thursday',
-  'FRI': 'Friday',
-  'SAT': 'Saturday'
+  'SUN': $localize`:@@sundayLabel:Воскресенье`,
+  'MON': $localize`:@@mondayLabel:Понедельник`,
+  'TUE': $localize`:@@tuesdayLabel:Вторник`,
+  'WED': $localize`:@@wednesdayLabel:Среда`,
+  'THU': $localize`:@@thursdayLabel:Четверг`,
+  'FRI': $localize`:@@fridayLabel:Пятница`,
+  'SAT': $localize`:@@saturdayLabel:Суббота`,
 };
 
 export const MonthWeeks = {
-  '#1': 'First',
-  '#2': 'Second',
-  '#3': 'Third',
-  '#4': 'Fourth',
-  '#5': 'Fifth',
-  'L': 'Last'
+  '#1': $localize`:@@firstLabel:Первый`,
+  '#2': $localize`:@@secondLabel:Второй`,
+  '#3': $localize`:@@thirdLabel:Третий`,
+  '#4': $localize`:@@fourthLabel:Четвертый`,
+  '#5': $localize`:@@fifthLabel:Пятый`,
+  'L': $localize`:@@lastLabel:Последний`
 };
 
 export enum Months {

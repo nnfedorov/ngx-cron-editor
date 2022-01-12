@@ -1,18 +1,8 @@
 <section class="cron-editor-main">
   <mat-tab-group class="cron-editor-container" (selectedIndexChange)="onTabFocus($event)" [backgroundColor]="backgroundColor" [color]="color">
 
-    <!-- Advanced-->
-    <mat-tab class="cron-editor-tab" i18n-label="@@expressionLabel" label="Выражение" *ngIf="!options.hideAdvancedTab">
-      <div class="cron-editor-tab-content" [formGroup]="advancedForm">
-        <mat-form-field>
-          <mat-label i18n="@@expressionLabel">Выражение</mat-label>
-          <input matInput type="text" class="advanced-cron-editor-input" formControlName="expression">
-        </mat-form-field>
-      </div>
-    </mat-tab>
-
     <!-- Minute -->
-    <mat-tab class="cron-editor-tab" i18n-label="@@minutesLabel" label="Минуты" *ngIf="!options.hideMinutesTab">
+    <mat-tab class="cron-editor-tab" i18n-label="@@everyMinuteLabel" label="Ежеминутно" *ngIf="!options.hideMinutesTab">
       <div class="cron-editor-tab-content">
         <span class="cron-form-label" i18n="@@eachFemaleLabel">Каждую</span>
         <cron-time-picker
@@ -25,7 +15,7 @@
     </mat-tab>
 
     <!-- Hourly -->
-    <mat-tab class="cron-editor-tab" i18n-label="@@hoursLabel" label="Часы" *ngIf="!options.hideHourlyTab">
+    <mat-tab class="cron-editor-tab" i18n-label="@@hourlyLabel" label="Ежечасно" *ngIf="!options.hideHourlyTab">
       <div class="cron-editor-tab-content">
         <span class="cron-form-label" i18n="@@eachMaleLabel">Каждый</span>
         <cron-time-picker [formGroup]="hourlyForm"
@@ -36,7 +26,7 @@
     </mat-tab>
 
     <!-- Daily-->
-    <mat-tab class="cron-editor-tab" i18n-label="@@daysLabel" label="Дни" *ngIf="!options.hideDailyTab">
+    <mat-tab class="cron-editor-tab" i18n-label="@@daylyLabel" label="Ежедневно" *ngIf="!options.hideDailyTab">
       <div class="cron-editor-tab-content" [formGroup]="dailyForm">
 
         <mat-radio-group class="cron-editor-radio-group" formControlName="subTab">
@@ -79,7 +69,7 @@
     </mat-tab>
 
     <!-- Weekly-->
-    <mat-tab  class="cron-editor-tab" i18n-label="@@weeksLabel" label="Недели" *ngIf="!options.hideWeeklyTab">
+    <mat-tab  class="cron-editor-tab" i18n-label="@@weeklyLabel" label="Еженедельно" *ngIf="!options.hideWeeklyTab">
       <div class="cron-editor-tab-content">
 
         <div>
@@ -106,7 +96,7 @@
     </mat-tab>
 
     <!-- Monthly-->
-    <mat-tab class="cron-editor-tab" i18n-label="@@monthsLabel" label="Месяцы" *ngIf="!options.hideMonthlyTab">
+    <mat-tab class="cron-editor-tab" i18n-label="@@monthlyLabel" label="Ежемесячно" *ngIf="!options.hideMonthlyTab">
       <div class="cron-editor-tab-content" [formGroup]="monthlyForm">
         <mat-radio-group class="cron-editor-radio-group" formControlName="subTab">
 
@@ -209,7 +199,7 @@
     </mat-tab>
 
     <!-- Yearly-->
-    <mat-tab class="cron-editor-tab" i18n-label="@@yearsLabel" label="Года" *ngIf="!options.hideYearlyTab">
+    <mat-tab class="cron-editor-tab" i18n-label="@@yearlyLabel" label="Ежегодно" *ngIf="!options.hideYearlyTab">
       <div class="cron-editor-tab-content" [formGroup]="yearlyForm">
         <mat-radio-group class="cron-editor-radio-group" formControlName="subTab">
           <mat-radio-button name="yearly-radio" class="cron-editor-radio-button" value="specificMonthDay" [ngClass]="state.formRadioClass">
@@ -233,8 +223,6 @@
                 </mat-option>
               </mat-select>
             </mat-form-field>
-
-            <span class="cron-form-field-joiner" i18n="@@ofPrep"></span>
 
             <mat-form-field formGroupName="specificMonthDay">
               <mat-label i18n="@@monthLabel">Месяц</mat-label>
@@ -276,8 +264,6 @@
               </mat-select>
             </mat-form-field>
 
-            <span class="cron-form-field-joiner" i18n="@@ofPrep"></span>
-
             <mat-form-field formGroupName="specificMonthWeek">
               <mat-label i18n="@@monthLabel">Месяц</mat-label>
               <mat-select class="months" formControlName="month">
@@ -296,6 +282,16 @@
             </cron-time-picker>
           </mat-radio-button>
         </mat-radio-group>
+      </div>
+    </mat-tab>
+
+    <!-- Advanced-->
+    <mat-tab class="cron-editor-tab" i18n-label="@@expressionLabel" label="Выражение" *ngIf="!options.hideAdvancedTab">
+      <div class="cron-editor-tab-content" [formGroup]="advancedForm">
+        <mat-form-field>
+          <mat-label i18n="@@expressionLabel">Выражение</mat-label>
+          <input matInput type="text" class="advanced-cron-editor-input" formControlName="expression">
+        </mat-form-field>
       </div>
     </mat-tab>
 

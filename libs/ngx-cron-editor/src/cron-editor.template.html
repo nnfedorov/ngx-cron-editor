@@ -45,7 +45,7 @@
             <span class="cron-form-label" i18n="@@eachMaleLabel">Каждый</span>
 
             <mat-form-field formGroupName="everyDays">
-              <mat-label i18n="@@daySPlLabel">Дни</mat-label>
+              <mat-label i18n="@@dayLabel">День</mat-label>
               <mat-select formControlName="days">
                 <mat-option *ngFor="let monthDay of selectOptions.monthDays" [value]="monthDay">
                   {{monthDay}}

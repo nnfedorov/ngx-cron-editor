@@ -16,8 +16,8 @@ export class AppComponent implements OnInit {
   public isCronDisabled = false;
 
   public cronOptions: CronOptions = {
-    formInputClass: 'form-control cron-editor-input',
-    formSelectClass: 'form-control cron-editor-select',
+    formInputClass: 'cron-editor-input',
+    formSelectClass: 'cron-editor-select',
     formRadioClass: 'cron-editor-radio',
     formCheckboxClass: 'cron-editor-checkbox',
 

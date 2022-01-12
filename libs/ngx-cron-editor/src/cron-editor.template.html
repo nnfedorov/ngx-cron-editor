@@ -2,7 +2,7 @@
   <mat-tab-group class="cron-editor-container" (selectedIndexChange)="onTabFocus($event)" [backgroundColor]="backgroundColor" [color]="color">
 
     <!-- Minute -->
-    <mat-tab class="cron-editor-tab" i18n-label="@@everyMinuteLabel" label="Ежеминутно" *ngIf="!options.hideMinutesTab">
+    <mat-tab class="cron-editor-tab" i18n-label="@@minutelyLabel" label="Ежеминутно" *ngIf="!options.hideMinutesTab">
       <div class="cron-editor-tab-content">
         <span class="cron-form-label" i18n="@@eachFemaleLabel">Каждую</span>
         <cron-time-picker
@@ -26,7 +26,7 @@
     </mat-tab>
 
     <!-- Daily-->
-    <mat-tab class="cron-editor-tab" i18n-label="@@daylyLabel" label="Ежедневно" *ngIf="!options.hideDailyTab">
+    <mat-tab class="cron-editor-tab" i18n-label="@@dailyLabel" label="Ежедневно" *ngIf="!options.hideDailyTab">
       <div class="cron-editor-tab-content" [formGroup]="dailyForm">
 
         <mat-radio-group class="cron-editor-radio-group" formControlName="subTab">

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.6](https://github.com/haavardj/ngx-cron-editor/compare/v0.7.5...v0.7.6) (2023-01-30)
+
+
+### Bug Fixes
+
+* wrong default values when tabs are hidden ([#11](https://github.com/haavardj/ngx-cron-editor/issues/11)) ([96e32bb](https://github.com/haavardj/ngx-cron-editor/commit/96e32bbb3904e10b3aedc949a6a06efa27081cd0)), closes [#12](https://github.com/haavardj/ngx-cron-editor/issues/12)
+
 ### [0.7.5](https://github.com/haavardj/ngx-cron-editor/compare/v0.7.4...v0.7.5) (2022-12-26)
 
 ### [0.7.4](https://github.com/haavardj/ngx-cron-editor/compare/v0.7.3...v0.7.4) (2022-07-07)

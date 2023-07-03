@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.7](https://github.com/haavardj/ngx-cron-editor/compare/v0.7.6...v0.7.7) (2023-07-03)
+
 ### [0.7.6](https://github.com/haavardj/ngx-cron-editor/compare/v0.7.5...v0.7.6) (2023-01-30)
 
 

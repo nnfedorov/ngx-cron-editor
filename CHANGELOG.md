@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.8](https://github.com/haavardj/ngx-cron-editor/compare/v0.7.7...v0.7.8) (2023-07-04)
+
+
+### Bug Fixes
+
+* upgrading peer dependency to 16 ([#18](https://github.com/haavardj/ngx-cron-editor/issues/18)) ([3a2fbf7](https://github.com/haavardj/ngx-cron-editor/commit/3a2fbf79a260763380d6f45711ca179336e0618e))
+
 ### [0.7.7](https://github.com/haavardj/ngx-cron-editor/compare/v0.7.6...v0.7.7) (2023-07-03)
 
 ### [0.7.6](https://github.com/haavardj/ngx-cron-editor/compare/v0.7.5...v0.7.6) (2023-01-30)

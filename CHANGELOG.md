@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.9](https://github.com/haavardj/ngx-cron-editor/compare/v0.7.8...v0.7.9) (2023-08-16)
+
+
+### Bug Fixes
+
+* cron expression loads from input ([#21](https://github.com/haavardj/ngx-cron-editor/issues/21)) ([5199dc5](https://github.com/haavardj/ngx-cron-editor/commit/5199dc5a878fa26406d0b22595523203d9d650d6)), closes [#15](https://github.com/haavardj/ngx-cron-editor/issues/15)
+
 ### [0.7.9-0](https://github.com/haavardj/ngx-cron-editor/compare/v0.7.8...v0.7.9-0) (2023-08-14)
 
 

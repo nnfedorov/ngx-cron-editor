@@ -6,7 +6,6 @@
 }
 
 .cron-editor-tab-content {
-  height: 200px;
   margin-top: 24px;
   border-radius: 8px;
 }
@@ -31,17 +30,24 @@
 }
 
 .cron-editor-main .cron-editor-container .hour-types {
-  width: 70px;
 }
 
 .nav-tabs li a {
   cursor: pointer;
 }
 
-.cron-editor-radio-group {
+.cron-editor-daily {
   display: flex;
+}
+
+.cron-editor-dail-hours {
+  align-self: center;
+}
+
+.cron-editor-radio-group {
   flex-direction: column;
   margin: 15px 0;
+  display: inline-flex;
 }
 
 .cron-editor-radio-button {

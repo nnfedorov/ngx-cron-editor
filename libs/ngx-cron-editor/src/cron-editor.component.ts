@@ -4,7 +4,8 @@ import { Days, MonthWeeks, Months } from './enums';
 import {ControlValueAccessor, FormBuilder, NG_VALUE_ACCESSOR, Validators} from '@angular/forms';
 import { ThemePalette } from '@angular/material/core';
 import {MatTab, MatTabChangeEvent} from '@angular/material/tabs';
-import {debounceTime, map, skip, Subscription, tap} from 'rxjs';
+import {Subscription} from 'rxjs';
+import {debounceTime} from 'rxjs/operators';
 
 type CronType = 'minutely' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'unknown';
 

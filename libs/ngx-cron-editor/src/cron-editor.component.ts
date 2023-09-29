@@ -1,6 +1,6 @@
 import {Component, Input, Output, OnInit, EventEmitter, forwardRef, ViewChild, OnDestroy} from '@angular/core';
 import {CronOptions, DefaultOptions} from './CronOptions';
-import { Days, MonthWeeks, Months } from './enums';
+import {Days, MonthWeeks, MonthNames} from './enums';
 import {ControlValueAccessor, FormBuilder, NG_VALUE_ACCESSOR, Validators} from '@angular/forms';
 import { ThemePalette } from '@angular/material/core';
 import {MatTab, MatTabChangeEvent} from '@angular/material/tabs';
@@ -120,7 +120,7 @@ export class CronGenComponent implements OnInit, OnDestroy, ControlValueAccessor
     FRI: [true],
     SAT: [true],
     SUN: [true],
-    expression: ['0 0 0 0 0']
+    expression: ['0 0 1/1 * *']
   });
 
   /*
@@ -318,16 +318,16 @@ export class CronGenComponent implements OnInit, OnDestroy, ControlValueAccessor
   }
 
   public monthDisplay(month: number): string {
-    return Months[month];
+    return MonthNames[month];
   }
 
   public monthDayDisplay(month: string): string {
     if (month === 'L') {
-      return 'Last Day';
+      return $localize`:@@lastDayLabel:Последний день`;
     } else if (month === 'LW') {
-      return 'Last Weekday';
+      return $localize`:@@lastWeekday:Последний будний день`;
     } else if (month === '1W') {
-      return 'First Weekday';
+      return $localize`:@@firstWeekday:Первый будний день`;
     } else {
       return `${month}${this.getOrdinalSuffix(month)}`;
     }
@@ -499,20 +499,20 @@ export class CronGenComponent implements OnInit, OnDestroy, ControlValueAccessor
     if (value.length > 1) {
       const secondToLastDigit = value.charAt(value.length - 2);
       if (secondToLastDigit === '1') {
-        return 'th';
+        return $localize`:@@thSuffix:-й`;
       }
     }
 
     const lastDigit = value.charAt(value.length - 1);
     switch (lastDigit) {
       case '1':
-        return 'st';
+        return $localize`:@@stSuffix:-й`;
       case '2':
-        return 'nd';
+        return $localize`:@@ndSuffix:-й`;
       case '3':
-        return 'rd';
+        return $localize`:@@rdSuffix:-й`;
       default:
-        return 'th';
+        return $localize`:@@thSuffix:-й`;
     }
   }
 

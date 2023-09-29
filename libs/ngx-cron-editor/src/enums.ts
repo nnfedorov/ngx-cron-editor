@@ -1,20 +1,20 @@
 ﻿export const Days = {
-  'SUN': 'Sunday',
-  'MON': 'Monday',
-  'TUE': 'Tuesday',
-  'WED': 'Wednesday',
-  'THU': 'Thursday',
-  'FRI': 'Friday',
-  'SAT': 'Saturday'
+  'SUN': $localize`:@@sundayLabel:Воскресенье`,
+  'MON': $localize`:@@mondayLabel:Понедельник`,
+  'TUE': $localize`:@@tuesdayLabel:Вторник`,
+  'WED': $localize`:@@wednesdayLabel:Среда`,
+  'THU': $localize`:@@thursdayLabel:Четверг`,
+  'FRI': $localize`:@@fridayLabel:Пятница`,
+  'SAT': $localize`:@@saturdayLabel:Суббота`
 };
 
 export const MonthWeeks = {
-  '#1': 'First',
-  '#2': 'Second',
-  '#3': 'Third',
-  '#4': 'Fourth',
-  '#5': 'Fifth',
-  'L': 'Last'
+  '#1': $localize`:@@firstFemaleLabel:Первую`,
+  '#2': $localize`:@@secondFemaleLabel:Вторую`,
+  '#3': $localize`:@@thirdFemaleLabel:Третью`,
+  '#4': $localize`:@@fourthFemaleLabel:Четвертую`,
+  '#5': $localize`:@@fifthFemaleLabel:Пятую`,
+  'L': $localize`:@@lastFemaleLabel:Последнюю`
 };
 
 export enum Months {
@@ -31,3 +31,19 @@ export enum Months {
   November,
   December
 }
+
+
+export const MonthNames: Record<Months, string> = {
+  [Months.January]: $localize`:@@januaryLabel:Январь`,
+  [Months.February]: $localize`:@@februaryLabel:Февраль`,
+  [Months.March]: $localize`:@@marchLabel:Март`,
+  [Months.April]: $localize`:@@aprilLabel:Апрель`,
+  [Months.May]: $localize`:@@mayLabel:Май`,
+  [Months.June]: $localize`:@@juneLabel:Июнь`,
+  [Months.July]: $localize`:@@julyLabel:Июль`,
+  [Months.August]: $localize`:@@augustLabel:Август`,
+  [Months.September]: $localize`:@@septemberLabel:Сентябрь`,
+  [Months.October]: $localize`:@@octoberLabel:Октябрь`,
+  [Months.November]: $localize`:@@novemberLabel:Ноябрь`,
+  [Months.December]: $localize`:@@decemberLabel:Декабрь`
+};

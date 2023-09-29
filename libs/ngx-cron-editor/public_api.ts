@@ -1,3 +1,5 @@
+import '@angular/localize/init';
+
 /*
  * Public API Surface of pmsys
  */

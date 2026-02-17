@@ -1,5 +1,5 @@
 {
-  "name": "ngx-cron-editor",
+  "name": "@nfedorov/ngx-cron-editor",
   "description": "A cron expression generator for Angular 15+",
   "author": "Håvard Dagenborg",
   "contributors": [
@@ -13,12 +13,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/haavardj/ngx-cron-editor"
+    "url": "git://github.com/nnfedorov/ngx-cron-editor"
   },
   "bugs": {
-    "url": "https://github.com/haavardj/ngx-cron-editor/issues"
+    "url": "https://github.com/nnfedorov/ngx-cron-editor/issues"
   },
-  "homepage": "https://github.com/haavardj/ngx-cron-editor",
+  "homepage": "https://github.com/nnfedorov/ngx-cron-editor",
   "keywords": [
     "angular",
     "cron",
@@ -29,13 +29,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration=production ngx-cron-editor",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "copyhtml": "copy 'src/app/cron-editor/*.html' './components/cron-editor/'",
     "copycss": "copy 'src/app/cron-editor/*.css' './components/cron-editor/'",
-    "pack": "ng-packagr -p package.json & cd dist & npm pack"
+    "pack": "ng-packagr -p package.json & cd dist & npm pack",
+    "publish": "npm run build & cd dist/libs/ngx-cron-editor & npm publish"
   },
   "dependencies": {
     "@angular/animations": "^18.2.6",

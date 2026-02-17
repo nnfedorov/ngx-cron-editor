@@ -1,34 +1,34 @@
 ﻿
 export const Days = {
-  'SUN': $localize`Sunday`,
-  'MON': $localize`Monday`,
-  'TUE': $localize`Tuesday`,
-  'WED': $localize`Wednesday`,
-  'THU': $localize`Thursday`,
-  'FRI': $localize`Friday`,
-  'SAT': $localize`Saturday`
+  'SUN': $localize`:@@sundayLabel:Воскресенье`,
+  'MON': $localize`:@@mondayLabel:Понедельник`,
+  'TUE': $localize`:@@tuesdayLabel:Вторник`,
+  'WED': $localize`:@@wednesdayLabel:Среда`,
+  'THU': $localize`:@@thursdayLabel:Четверг`,
+  'FRI': $localize`:@@fridayLabel:Пятница`,
+  'SAT': $localize`:@@saturdayLabel:Суббота`
 };
 
 export const MonthWeeks = {
-  '#1': $localize`First`,
-  '#2': $localize`Second`,
-  '#3': $localize`Third`,
-  '#4': $localize`Fourth`,
-  '#5': $localize`Fifth`,
-  'L': $localize`Last`
+  '#1': $localize`:@@firstFemaleLabel:Первую`,
+  '#2': $localize`:@@secondFemaleLabel:Вторую`,
+  '#3': $localize`:@@thirdFemaleLabel:Третью`,
+  '#4': $localize`:@@fourthFemaleLabel:Четвертую`,
+  '#5': $localize`:@@fifthFemaleLabel:Пятую`,
+  'L': $localize`:@@lastFemaleLabel:Последнюю`
 };
 
 export const Months = {
-  1: $localize`January`,
-  2: $localize`February`,
-  3: $localize`March`,
-  4: $localize`April`,
-  5: $localize`May`,
-  6: $localize`June`,
-  7: $localize`July`,
-  8: $localize`August`,
-  9: $localize`September`,
-  10: $localize`October`,
-  11: $localize`November`,
-  12: $localize`December`
+  1: $localize`:@@januaryLabel:Январь`,
+  2: $localize`:@@februaryLabel:Февраль`,
+  3: $localize`:@@marchLabel:Март`,
+  4: $localize`:@@aprilLabel:Апрель`,
+  5: $localize`:@@mayLabel:Май`,
+  6: $localize`:@@juneLabel:Июнь`,
+  7: $localize`:@@julyLabel:Июль`,
+  8: $localize`:@@augustLabel:Август`,
+  9: $localize`:@@septemberLabel:Сентябрь`,
+  10: $localize`:@@octoberLabel:Октябрь`,
+  11: $localize`:@@novemberLabel:Ноябрь`,
+  12: $localize`:@@decemberLabel:Декабрь`
 }

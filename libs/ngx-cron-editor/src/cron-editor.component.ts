@@ -1,10 +1,10 @@
 import {Component, Input, OnInit, forwardRef, ViewChild, OnDestroy, ViewChildren, QueryList} from '@angular/core';
 import {CronOptions, DefaultOptions} from './CronOptions';
-import { Days, MonthWeeks, Months } from './enums';
+import {Days, MonthWeeks, Months} from './enums';
 import {ControlValueAccessor, FormBuilder, NG_VALUE_ACCESSOR, Validators} from '@angular/forms';
-import { ThemePalette } from '@angular/material/core';
+import {ThemePalette} from '@angular/material/core';
 import {MatTab, MatTabChangeEvent} from '@angular/material/tabs';
-import {debounceTime, Subscription } from 'rxjs';
+import {debounceTime, Subscription} from 'rxjs';
 
 type CronType = 'minutely' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'unknown';
 
@@ -333,11 +333,11 @@ export class CronGenComponent implements OnInit, OnDestroy, ControlValueAccessor
     }
 
     if (month === 'L') {
-      return $localize`Last Day`;
+      return $localize`:@@lastDayLabel:Последний день`;
     } else if (month === 'LW') {
-      return $localize`Last Weekday`;
+      return $localize`:@@lastWeekday:Последний будний день`;
     } else if (month === '1W') {
-      return $localize`First Weekday`;
+      return $localize`:@@firstWeekday:Первый будний день`;
     } else {
       return `${month}${this.getOrdinalSuffix(month)}`;
     }
@@ -539,19 +539,19 @@ export class CronGenComponent implements OnInit, OnDestroy, ControlValueAccessor
 
     // th if secondToLastDigit is 1: ..10th, ..11th, ..19th,
     if (value.length > 1 && value.charAt(value.length - 2) === '1') {
-        return 'th';
+      return $localize`:@@thSuffix:-й`;
     }
 
     // Check last digit:  21st, 22nd, 23rd, 24th, 25t, etc.
     switch (value.charAt(value.length - 1)) {
       case '1':
-        return 'st';
+        return $localize`:@@stSuffix:-й`;
       case '2':
-        return 'nd';
+        return $localize`:@@ndSuffix:-й`;
       case '3':
-        return 'rd';
+        return $localize`:@@rdSuffix:-й`;
       default:
-        return 'th';
+        return $localize`:@@thSuffix:-й`;
     }
   }
 
